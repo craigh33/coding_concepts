@@ -10,15 +10,36 @@ class DirectionControls extends Component{
       debugger;
     }
 
+    backClick(e){
+        //instance of Character.js injected as property during instantiation
+        var character = this.props.characterRef.current;
+        character.moveBack();
+        debugger;
+    }
+
+    leftClick(e){
+        //instance of Character.js injected as property during instantiation
+        var character = this.props.characterRef.current;
+        character.moveLeft();
+        debugger;
+    }
+
+    rightClick(e){
+        //instance of Character.js injected as property during instantiation
+        var character = this.props.characterRef.current;
+        character.moveRight();
+        debugger;
+    }
+
     render(){
         return(
             <div id="directionControls" class="columnLayout">
               <div class="rowLayout">
-                <img src={left_arrow} class="arrow backArrow"/>
+                <img src={left_arrow} class="arrow backArrow" onClick={(e) => this.backClick(e)}/>
                 <div class="columnLayout">
-                  <img src={left_arrow} class="arrow"/>
+                  <img src={left_arrow} class="arrow" onClick={(e) => this.leftClick(e)}/>
                   <img src={left_arrow} class="arrow forwardArrow" onClick={(e) => this.forwardClick(e)} />
-                  <img src={left_arrow} class="arrow rightArrow" />
+                  <img src={left_arrow} class="arrow rightArrow" onClick={(e) => this.rightClick(e)}/>
                 </div>
               </div>
             </div>
