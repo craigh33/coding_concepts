@@ -55,7 +55,7 @@ class App extends Component {
           <div><p>{this.state.boardConfig.rules}.</p></div>
           <div class="columnLayout">
             <ChessBoard id="chessBoard" config={this.state.boardConfig} ref={this.boardRef} characterRef={this.characterRef} />
-            <DirectionControls characterRef={this.characterRef} />
+            <DirectionControls characterRef={this.characterRef} boardRef={this.state.boardConfig} />
           </div>
 
         </main>
