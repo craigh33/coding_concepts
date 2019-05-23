@@ -15,12 +15,12 @@ By the end of this epic the game board will be initialised with colours and the 
 3. ~~Add a refresh button to get a new game~~
 4. ~~Place a character at the starting point of the board when the game loads (A1)~~
 5. ~~Provide UI controls that can be used to move the character in each of the four directions~~
-6. _Animate the actions the user has entered by moving the character_
+6. ~~Animate the actions the user has entered by moving the character~~
     * ~~When the forward button is pressed the character moves forward~~
     * ~~When the back button is pressed the character moves backwards~~
     * ~~When the left button is pressed the character moves left~~
     * ~~When the right button is pressed the character moves right~~
-7. Communicate with the user which colour to collect
+7. ~~Communicate with the user which colour to collect~~
 8. When the character crosses the correct colour then store it as collected
 9. Once a colour is collected remove it from the game board
 10. When all colours are collected congratulate the user for completing the game
@@ -51,6 +51,6 @@ By the end of this epic the game board will be initialised with colours and the 
 ### Bugs
 1. ~~There are 9 rows on the chess board~~
     ~~* we only need 8~~
-2. ~~Green can never be the primary colour in the grid
-    * The primary colour should be random between Red, Green and Blue~~
+2. ~~Green can never be the primary colour in the grid~~
+    * ~~The primary colour should be random between Red, Green and Blue~~
 

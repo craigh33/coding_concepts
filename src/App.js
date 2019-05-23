@@ -48,14 +48,16 @@ class App extends Component {
         </header>
       );
     } else {
+      console.log(this.state.boardConfig);
       content = (
         <main className="App-main">
           <div><button onClick={(e) => this.refreshLayout(e)}>New Game</button></div>
+          <div><p>{this.state.boardConfig.rules}.</p></div>
           <div class="columnLayout">
             <ChessBoard id="chessBoard" config={this.state.boardConfig} ref={this.boardRef} characterRef={this.characterRef} />
             <DirectionControls characterRef={this.characterRef} />
           </div>
-          
+
         </main>
       );
     }
